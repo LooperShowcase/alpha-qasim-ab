@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Brawl Stars</title>
+  <link rel="shortcut icon" href="https://www.citypng.com/public/uploads/preview/hd-brawl-stars-game-logo-icon-symbol-png-701751694787802lmcclzylma.png" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+    #nav {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: dodgerblue;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #nav-item {
+      flex: 1 0 auto;
+      text-align: center;
+      min-width: 120px;
+    }
+    #nav-item a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    #nav-item a:hover {
+      background-color: crimson;
+    }
+    .contact-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      color: crimson;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-info {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .contact-info h4 {
+      margin: 15px 0;
+      color: #333;
+      font-size: 1.2rem;
+    }
+    .map-container {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+    @media (max-width: 768px) {
+      #nav-item {
+        min-width: 100%;
+      }
+      .contact-info {
+        padding: 20px;
+      }
+      .map-container iframe {
+        height: 350px;
+      }
+    }
+    @media (max-width: 480px) {
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ul id="nav">
+    <li id="nav-item"><a href="index.html">Home</a></li>
+    <li id="nav-item"><a href="photos.html">Photos</a></li>
+    <li id="nav-item"><a href="news.html">News</a></li>
+    <li id="nav-item"><a href="play-modes.html">Play Modes</a></li>
+    <li id="nav-item"><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="contact-container">
+    <h1>Contact</h1>
+    
+    <div class="contact-info">
+      <h4>kasem</h4>
+      <h4>0524657295</h4>
+      <h4>kasem@loop.com</h4>
+    </div>
+    
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.281401174585!2d24.9215342!3d60.1610068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a4a2b06e4af%3A0xd7d7fa90d6a04e63!2sSupercell!5e1!3m2!1sar!2sil!4v1743694669370!5m2!1sar!2sil" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+</html>
