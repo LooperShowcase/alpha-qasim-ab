@@ -3,29 +3,41 @@
 <head>
     <title>Brawl Stars</title>
     <link rel="shortcut icon" href="https://www.citypng.com/public/uploads/preview/hd-brawl-stars-game-logo-icon-symbol-png-701751694787802lmcclzylma.png" type="image/x-icon">
-   <style>#nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:dodgerblue;
-  }
-  
-  #nav-item {
-    float: left;
-  }
-  
-  #nav-item a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  #nav-item a:hover {
-    background-color:crimson;
-}</style>
+   <style>
+      #nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: dodgerblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #nav-item {
+        flex: 1 0 auto;
+        text-align: center;
+        min-width: 120px;
+      }
+
+      #nav-item a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      #nav-item a:hover {
+        background-color: crimson;
+      }
+
+      @media (max-width: 600px) {
+        #nav-item {
+          min-width: 100%;
+        }
+      }
+   </style>
 </head>
 <body>
     <ul id="nav">

@@ -5,34 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<style> #nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:dodgerblue;
-  }
+<style>
+      #nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: dodgerblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      #nav-item {
+        flex: 1 0 auto;
+        text-align: center;
+        min-width: 120px;
+      }
+
+      #nav-item a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+
+      #nav-item a:hover {
+        background-color: crimson;
+      }
+
+      @media (max-width: 600px) {
+        #nav-item {
+          min-width: 100%;
+        }
+      }
   
-  #nav-item {
-    float: left;
-  }
-  
-  #nav-item a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  #nav-item a:hover {
-    background-color:crimson;
-  }
-  
- img{
-  width:25% ;
- }
-   
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      }
+
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+   h1{
+    font-size: 80px;
+   }
    
    </style>
    
@@ -62,20 +98,35 @@
 
 
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzOSVi3noXj-yghp_uMhnV5u2-irATPH4sA&s" alt="">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhkdFHgDiTmrAJi91b8JOQ0K98xViYx7OEA&s" alt="">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyj__tX2jAVCPccOZbRKxzkC5Nfkh0_iOsZw&s" alt="">
-<img src="https://c2c.fp.guinfra.com/file/66b2196e128c312a1a8a7842MXRayYXu03" alt="">
-<img src="https://www.zleague.gg/theportal/wp-content/uploads/2023/07/BrawlStars3-1140x570.jpg" alt="">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOy5rfPB02ISecyU8_gTSvjOYs66jcWSGqOw&s" alt="">
-<img src="https://media.assettype.com/afkgaming%2F2023-09%2F39e85649-39c2-4ad3-a727-e365c6db3ca7%2FCover_Image___Brawl_Stars_Pearl___Abilities__Gadgets__Star_Powers__Hypercharge__How_To_Unlock.jpg?auto=format%2Ccompress&dpr=1.0&w=1200" alt="">
-<img src="https://supercell.com/images/0f230788bb32b0ad0e0b39211a685a6a/1125_Toy_Story_PR_Statics_1920x1080__1_.png" alt="">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrf0f9j39nGYZGzD8BbSfKmZTrUkgLr2y4w&s" alt="">
-<img src="https://images.squarespace-cdn.com/content/58af450eb3db2b0582612f1d/1707662368729-PA2K3W3Y2IBE3YV8TDKM/all-loading-screens-coming-in-this-update-v0-m7si1wq0yh5c1.jpeg?format=1500w&content-type=image%2Fjpeg" alt="">
-<img src="https://supercell.com/images/ce8940c9273926f6e1e6c83324ef938e/article_image_brawlstarseveryone.jpg" alt="">
-<img src="https://www.keywordsstudios.com/images/custom/d8/4ce517af2d64a6d88678e1a73d56d7/w880/q80/images/uploads/d84ce517af2d64a6d88678e1a73d56d7.png" alt="">
+    <div class="gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzOSVi3noXj-yghp_uMhnV5u2-irATPH4sA&s" alt="Brawl Stars character">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfhkdFHgDiTmrAJi91b8JOQ0K98xViYx7OEA&s" alt="Brawl Stars gameplay">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyj__tX2jAVCPccOZbRKxzkC5Nfkh0_iOsZw&s" alt="Brawl Stars event">
+        <img src="https://c2c.fp.guinfra.com/file/66b2196e128c312a1a8a7842MXRayYXu03" alt="Brawl Stars skins">
+        <img src="https://www.zleague.gg/theportal/wp-content/uploads/2023/07/BrawlStars3-1140x570.jpg" alt="Brawl Stars tournament">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOy5rfPB02ISecyU8_gTSvjOYs66jcWSGqOw&s" alt="Brawl Stars update">
+        <img src="https://media.assettype.com/afkgaming%2F2023-09%2F39e85649-39c2-4ad3-a727-e365c6db3ca7%2FCover_Image___Brawl_Stars_Pearl___Abilities__Gadgets__Star_Powers__Hypercharge__How_To_Unlock.jpg?auto=format%2Ccompress&dpr=1.0&w=1200" alt="Brawl Stars character">
+        <img src="https://supercell.com/images/0f230788bb32b0ad0e0b39211a685a6a/1125_Toy_Story_PR_Statics_1920x1080__1_.png" alt="Brawl Stars collaboration">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrf0f9j39nGYZGzD8BbSfKmZTrUkgLr2y4w&s" alt="Brawl Stars map">
+        <img src="https://images.squarespace-cdn.com/content/58af450eb3db2b0582612f1d/1707662368729-PA2K3W3Y2IBE3YV8TDKM/all-loading-screens-coming-in-this-update-v0-m7si1wq0yh5c1.jpeg?format=1500w&content-type=image%2Fjpeg" alt="Brawl Stars loading screen">
+        <img src="https://supercell.com/images/ce8940c9273926f6e1e6c83324ef938e/article_image_brawlstarseveryone.jpg" alt="Brawl Stars community">
+        <img src="https://www.keywordsstudios.com/images/custom/d8/4ce517af2d64a6d88678e1a73d56d7/w880/q80/images/uploads/d84ce517af2d64a6d88678e1a73d56d7.png" alt="Brawl Stars development">
+      <img src="https://play-lh.googleusercontent.com/I5qwumhxCuT9DBPAFVSmB1rILtjTsTPXnduimvxiuiOnQoFAQF7mll6kkylxiDbEakNQ=w648-h364-rw" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGXnWVkCCSsW_KhgMaVe2aR2HMM1vsiTdVQg&s" alt="">
+      <img src="https://pbs.twimg.com/media/GmyaBaJagAEytkM?format=jpg&name=large" alt="">
+      <img src="https://assetsio.gnwcdn.com/brawl-stars-rt-middle-tier.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="">
+      <img src="https://media.pocketgamer.com/artwork/na-28660-1725537703/brawl-stars-spongebob.jpg" alt="">
+      <img src="https://piks.eldesmarque.com/thumbs/o/1200/bin/2024/07/16/brawl_stars_001.jpg" alt="">
+      <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/brawl-stars-best-brawler.jpg" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLObwhHUUJG8BHwk34kGfB4HsbLR1EYJXluQ&s" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJJjldNBNZ2cUGZJiBvnuHtQVW2IMez7Qow&s" alt="">
+     
 
+    </div>
 
+ <center>
+      <h1>A Photos For Brawl Stars</h1>
+      </center>
 
 
 

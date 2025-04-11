@@ -2,29 +2,39 @@
 <html lang="en">
 <head>
  <style>
- #nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:dodgerblue;
-}
+      #nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: dodgerblue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
-#nav-item {
-  float: left;
-}
+      #nav-item {
+        flex: 1 0 auto;
+        text-align: center;
+        min-width: 120px;
+      }
 
-#nav-item a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+      #nav-item a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
 
-#nav-item a:hover {
-  background-color:crimson;
-}
+      #nav-item a:hover {
+        background-color: crimson;
+      }
+
+      @media (max-width: 600px) {
+        #nav-item {
+          min-width: 100%;
+        }
+      }
 
 
 p{
